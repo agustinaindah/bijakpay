@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrapLayout"
+    android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="@drawable/navbar_bj"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                style="@style/WrapWrapLayout"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Current Member Type"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/txtMembership"
+                style="@style/MatchWrapLayout"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:fontFamily="monospace"
+                android:textSize="26sp" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvMemberType"
+                style="@style/MatchMatchLayout"
+                android:padding="3dp" />
+
+        </RelativeLayout>
+
+
+       <!-- <android.support.v7.widget.CardView
+            android:id="@+id/cardToken"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/rvMemberType"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Upgrade Using Token"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/btnUpdateToken"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Submit"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>-->
+
+</LinearLayout>

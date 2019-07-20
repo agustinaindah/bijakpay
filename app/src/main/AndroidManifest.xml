@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bijakpay.member">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BijakApps"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".features.SplashscreenActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".features.intro.IntroScreenActivity"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name=".features.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".features.login.LoginActivity"
+            android:label="@string/label_login"
+            android:theme="@style/AppTheme.Splash"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".features.register.RegisterActivity"
+            android:label="@string/label_signup"
+            android:theme="@style/AppTheme.Splash"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".features.member_type.MemberTypeActivity"
+            android:label="@string/label_member_type"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.point_reward.BonusRedeemActivity"
+            android:label="Bonus Redeem"
+            android:theme="@style/AppTheme" />
+        <!--<activity
+            android:name=".features.register_friends.RegisterFriendActivity"
+            android:label="@string/label_register_friend"
+            android:theme="@style/AppTheme" />-->
+        <activity
+            android:name=".features.community.CommunityActivity"
+            android:label="@string/label_join_community"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.profile.AccountSettingsActivity"
+            android:label="@string/label_account"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.payment.PaymentActivity"
+            android:label="@string/label_payment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.bussines_report.BusinessReportActivity"
+            android:label="Bussines Report"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.personal_report.PersonalReportActivity"
+            android:label="Personal Report"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.point_reward.history.HistoryMyPointActivity"
+            android:label="History Point Reward"
+            android:theme="@style/AppTheme"/>
+        <!--<activity
+            android:name=".features.message.MessageActivity"
+            android:label="Message"
+            android:theme="@style/AppTheme"/>-->
+        <activity
+            android:name=".features.bussines_report.MyBusinessReportActivity"
+            android:label="Business Report"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".features.personal_report.MyPersonalReportActivity"
+            android:label="Personal Report"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.dashboard.DashboardActivity"
+            android:label="Dashboard"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.register_friends.RegisterFriendActivity2"
+            android:label="Register Friend"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".features.ReportActivity"
+            android:label="Report"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".features.network.MyNetworkActivity"
+            android:label="My Network"
+            android:theme="@style/AppTheme"/>
+
+        <!--<activity
+            android:name=".features.download.DownloadMateriActivity"
+            android:label="Download Materi"
+            android:theme="@style/AppTheme"/>-->
+
+        <activity
+            android:name=".features.download.DownloadFileActivity"
+            android:label="Download Materi"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".features.community.MyCommunityActivity"
+            android:label="My Community Member"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

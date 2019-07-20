@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatchLayout">
+
+    <RelativeLayout style="@style/MatchMatchLayout">
+
+        <RelativeLayout
+            android:id="@+id/layUploadPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/nav_header"
+            android:gravity="center">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/no_image"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/layUploadPhoto"
+            android:layout_margin="7dp">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:layout_marginTop="8dp"
+                android:padding="7dp">
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Edit Profile"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgEditProfile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_edit" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                style="@style/MatchWrapLayout"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txtProfileName"
+                    style="@style/MatchWrapLayout"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtProfileHp"
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="3dp"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtProfileBirthday"
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="3dp"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtProfileJob"
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="3dp"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtProfileHobby"
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="3dp"
+                    android:text=""
+                    android:textSize="12sp" />
+            </LinearLayout>-->
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProfileAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cardMyProfile"
+            android:layout_margin="7dp">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:layout_marginTop="8dp"
+                android:padding="7dp">
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="1"
+                    android:text="Edit Address"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgEditAddress"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_edit" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/cardProfileBankAccount"
+            android:layout_below="@+id/cardProfileAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="7dp">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:layout_marginTop="8dp"
+                android:padding="7dp">
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Edit Bank Account"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgEditBankAccount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_edit" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProfileChangePassword"
+            android:layout_below="@+id/cardProfileAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="7dp">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:layout_marginTop="8dp"
+                android:padding="7dp">
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Edit Password"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgEditPassword"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_edit" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

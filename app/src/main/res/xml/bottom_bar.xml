@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_dashboard"
+        icon="@drawable/ic_dashboard"
+        title="@string/label_dashboard" />
+    <tab
+        id="@+id/tab_personal_report"
+        icon="@drawable/ic_book"
+        title="@string/personal_report" />
+    <tab
+        id="@+id/tab_bussines_report"
+        icon="@drawable/ic_book"
+        title="@string/bussines_report" />
+    <!--<tab
+        id="@+id/tab_download"
+        icon="@drawable/ic_download"
+        title="@string/download" />-->
+</tabs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatchLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMain"
+        style="@style/MatchWrapLayout"
+        />
+
+    <include layout="@layout/view_error"/>
+<!--android:layout_below="@id/sliderBanner" -->
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clMainContent"
+    style="@style/MatchMatchLayout"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:background="@drawable/navbar_bj"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <TextView
+                    style="@style/WrapWrapLayout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:text="Saldo E-wallet"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/txtSaldoEwallet"
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Rp 2.500.000"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="monospace"
+                    android:textSize="26sp" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardRewardPoint"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/appbar"
+                android:layout_margin="5dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    style="@style/MatchWrapLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Reward Point"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtRewardPoint"
+                        style="@style/MatchWrapLayout"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:text="0 pts" />
+
+                   <!-- <Button
+                        android:id="@+id/btnRedeem"
+                        style="@style/btn_income_style"
+                        android:layout_marginLeft="250dp"
+                        android:textColor="@android:color/white"
+                        android:text="Redeem"/>-->
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardCashback"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/cardRewardPoint"
+                android:layout_margin="5dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    style="@style/MatchWrapLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Cashback"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtCashback"
+                        style="@style/MatchWrapLayout"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="0 pts" />
+
+                    <Button
+                        android:id="@+id/btnCashback"
+                        android:layout_marginLeft="250dp"
+                        style="@style/btn_income_style"
+                        android:textColor="@android:color/white"
+                        android:text="Tukar"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardRoyalty"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/cardCashback"
+                android:layout_margin="5dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    style="@style/MatchWrapLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Royalty"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtRoyalty"
+                        style="@style/MatchWrapLayout"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="0 pts" />
+
+                    <Button
+                        android:id="@+id/btnRoyalty"
+                        android:layout_marginLeft="250dp"
+                        style="@style/btn_income_style"
+                        android:textColor="@android:color/white"
+                        android:text="Tukar"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardCommission"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/cardRoyalty"
+                android:layout_margin="5dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    style="@style/MatchWrapLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Commission"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtCommission"
+                        style="@style/MatchWrapLayout"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:text="0 pts" />
+
+                    <Button
+                        android:id="@+id/btnComission"
+                        android:layout_marginLeft="250dp"
+                        style="@style/btn_income_style"
+                        android:textColor="@android:color/white"
+                        android:text="Tukar"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

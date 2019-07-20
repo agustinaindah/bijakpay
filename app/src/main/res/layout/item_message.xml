@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layItemMessage"
+    style="@style/MatchWrapLayout"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_margin="5dp"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/txtMessageSender"
+        style="@style/MatchWrapLayout"
+        android:layout_alignTop="@+id/imgMessageSender"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imgMessageSender"
+        android:layout_toRightOf="@+id/imgMessageSender"
+        android:text="Nama Pengirim"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtMessageSubject"
+        style="@style/MatchWrapLayout"
+        android:layout_alignBottom="@+id/imgMessageSender"
+        android:layout_alignLeft="@+id/txtMessageSender"
+        android:layout_alignStart="@+id/txtMessageSender"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+        android:text="Subject"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="1"
+        android:singleLine="false"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgMessageSender"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/no_image"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@android:color/darker_gray"
+        app:civ_shadow_radius="1" />
+
+    <TextView
+        android:id="@+id/txtMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMessageSender"
+        android:layout_alignBottom="@+id/txtMessageSender"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:textSize="11sp"
+        android:text="14:08" />
+
+    <FrameLayout
+        android:layout_below="@+id/imgMessageSender"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_300" />
+</RelativeLayout>

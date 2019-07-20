@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Bijak Office</string>
+
+    <string name="base_url">http://betaapi.bijakpay.com</string>
+    <string name="X_API_KEY">12345</string>
+
+    <string name="action_back_pressed">Tekan sekali lagi untuk keluar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="label_login">Login</string>
+    <string name="label_signup">Sign Up</string>
+    <string name="label_signin">Sign In</string>
+    <string name="label_home">Home</string>
+    <string name="label_dashboard">Dashboard</string>
+    <string name="label_account">Account Settings</string>
+    <string name="label_profile">My Profile</string>
+    <string name="label_account_bank">Bank Account</string>
+    <string name="label_payment">Payment</string>
+    <string name="label_message">Message</string>
+    <string name="label_report">Report</string>
+    <string name="label_logout">Log out</string>
+    <string name="label_member_type">Upgrade Member</string>
+    <string name="label_income">Income</string>
+    <string name="label_register_friend">Register</string>
+    <string name="label_join_community">Community</string>
+    <string name="label_point_reward">Point Reward</string>
+    <string name="label_my_network">My Network</string>
+    <string name="label_bonus_redeem">Bonus Redeem</string>
+    <string name="label_download">Download</string>
+    <string name="label_cashback">Cashback</string>
+    <string name="label_commission">Commission</string>
+    <string name="label_my_channel">My Channel</string>
+    <string name="label_unilevel">Unilevel</string>
+
+    <string name="report">Report</string>
+    <string name="personal_report">Personal Report</string>
+    <string name="report_trans_ppob">Report Transaksi PPOB</string>
+    <string name="report_cashback">Report Cashback</string>
+    <string name="report_commission">Report Commission</string>
+    <string name="report_cashback_refund">Report Cashback Refund</string>
+    <string name="bussines_report">Bussines Report</string>
+    <string name="report_membership">Report Membership</string>
+    <string name="report_royalty">Report Royalty</string>
+    <string name="report_royalty_refund">Report Royalty Refund</string>
+    <string name="report_stock_card">Report Stock Card</string>
+    <string name="report_membership_trans">Report Membership Transaction</string>
+    <string name="download">Download</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birthdate">Birth Date</string>
+    <string name="address">Address</string>
+    <string name="job">Job</string>
+    <string name="hobby">Hobby</string>
+    <string name="phone">Phone</string>
+    <string name="no_data">No Data</string>
+    <string name="province">Province</string>
+    <string name="city">City</string>
+    <string name="district">Subdistrict</string>
+    <string name="profile">Profile</string>
+    <string name="account_bank">Bank Account</string>
+    <string name="token_ver">Token Verification</string>
+    <string name="verify_upgrade">Verify Your Upgrade</string>
+    <string name="password_change">Change Password</string>
+    <string name="mynetwork">Unilevel</string>
+    <string name="mychannel">My Channel</string>
+    <string name="com_title">Community Title</string>
+    <string name="com_type">Community Type</string>
+    <string name="com_desc">Description</string>
+    <string name="create_comm">Create Community</string>
+    <string name="join_comm">Verify Community To Join</string>
+    <string name="get_comm">Get Community</string>
+    <string name="my_comm_member">My Community Member</string>
+    <string name="download_materi">Download Materi</string>
+
+    <string name="transition_string">transition</string>
+    <string name="loading">Loading...</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="success_remove">Data Successfully Delete</string>
+    <string name="not_fill">Not Filled</string>
+    <string name="msg_empty">Empty</string>
+    <string name="msg_not_valid">Not valid</string>
+    <string name="msg_success_register">Successful registration,
+        please check your email to confirm</string>
+    <string name="msg_not_connect">No internet connection found. \n Check your connection</string>
+    <string name="text_saved_data">Data Successfully Saved</string>
+    <string name="text_send_code">We have sent the code via SMS</string>
+    <string name="text_update_data_success">Data successfully updated</string>
+    <string name="text_error">
+        Error occur.\n Repeat in a few minutes.
+    </string>
+    <string name="msg_succes_comm">Create Community Success</string>
+    <string name="info_saldo_cash">Saldo Cashback 0</string>
+    <string name="info_saldo_royalty">Saldo Royalty 0</string>
+    <string name="info_saldo_commisi">Saldo Commission 0</string>
+    <string name="msg_isi_data">Silahkan mengisi data dahulu di bijakpay.com</string>
+    <string name="msg_create_comm">Community Successfully Created</string>
+    <string name="msg_join_comm">Successfully Join the Community</string>
+    <string name="msg_saldo">Saldo Tidak Mencukupi</string>
+    <string name="msg_success">Success</string>
+    <string name="check_again">Check Again</string>
+
+    <!--Intro Bijakpay-->
+
+    <string name="intro_title_business">Business Center</string>
+    <string name="intro_title_upgrade">Upgrade Account</string>
+    <string name="intro_title_payment">Payment Gateway</string>
+    <string name="intro_title_community">Community Selection</string>
+    <string name="intro_desc_business">Kantor bisnis dalam genggaman, pusat kendali berbagai laporan transaksi,
+        evaluasi pendapatan dan setting administratif</string>
+    <string name="intro_desc_upgrade">Tingkatkan akun menjadi bisnis untuk mendapatkan
+        maksimal benefit dan income</string>
+    <string name="intro_desc_payment">Membantu pemilik usaha menerima pembayaran dengan merchant payment conection,
+        atau menu transfer e-wallet</string>
+    <string name="intro_desc_community">Cari komunitas sesuai minat untuk bergabung atau buat komunitasmu sendiri
+        dan kembangkan bersama kami</string>
+    
+    <!---End Intro-->
+
+    <string-array name="data_provincies">
+        <item>@string/province</item>
+        <item>Jawa Tengah</item>
+        <item>DI Yogyakarta</item>
+        <item>Jawa Timur</item>
+        <item>DKI Jakarta</item>
+    </string-array>
+
+    <string-array name="data_cities">
+        <item>@string/city</item>
+        <item>Yogyakarta</item>
+        <item>Pekalongan</item>
+        <item>Semarang</item>
+        <item>Jakarta</item>
+    </string-array>
+
+    <string-array name="data_regencies">
+        <item>@string/district</item>
+        <item>Gondokusuman</item>
+        <item>Bojong</item>
+        <item>Sragi</item>
+        <item>Kajen</item>
+    </string-array>
+</resources>

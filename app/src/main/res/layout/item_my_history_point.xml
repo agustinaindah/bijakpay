@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/layItemHistoryPoint"
+        style="@style/MatchWrapLayout"
+        android:padding="7dp">
+
+        <TextView
+           android:id="@+id/txtDateMyHistory"
+           style="@style/WrapWrapLayout"
+           android:text="27 November 2017"
+           android:textSize="11sp"
+           android:textColor="#2e4c6b"/>
+
+        <TextView
+            android:id="@+id/txtIn"
+            style="@style/WrapWrapLayout"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_below="@id/txtDateMyHistory"
+            android:text="Income :"/>
+
+        <TextView
+            android:id="@+id/txtInPoint"
+            style="@style/WrapWrapLayout"
+            android:text="In Point"
+            android:textSize="11sp"
+            android:layout_below="@+id/txtDateMyHistory"
+            android:layout_toRightOf="@+id/txtOut"
+            android:layout_toEndOf="@+id/txtOut" />
+
+        <TextView
+            android:id="@+id/txtOut"
+            android:textSize="11sp"
+            android:layout_below="@+id/txtInPoint"
+            style="@style/WrapWrapLayout"
+            android:textStyle="bold"
+            android:text="Outcome :"/>
+
+        <TextView
+            android:id="@+id/txtOutPoint"
+            style="@style/WrapWrapLayout"
+            android:text="OutPoint"
+            android:textSize="11sp"
+            android:layout_below="@+id/txtInPoint"
+            android:layout_toRightOf="@+id/txtOut"
+            android:layout_toEndOf="@+id/txtOut"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/txtDescMyHistory"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/txtOutPoint"
+            android:textSize="11sp"
+            android:text="Desc"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layItemHistoryPoint"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

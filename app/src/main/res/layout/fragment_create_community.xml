@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrapLayout">
+
+    <RelativeLayout
+        style="@style/MatchWrapLayout"
+        android:layout_margin="7dp">
+
+        <LinearLayout
+            style="@style/MatchWrapLayout"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputTitleCom"
+                style="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edtTitleCom"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:hint="@string/com_title" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputTypeCom"
+                style="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edtTypeCom"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:hint="@string/com_type" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/MatchWrapLayout"
+                android:padding="5dp"
+                android:text="@string/com_desc"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtDescCom"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="start"
+                android:hint="@string/com_desc"
+                android:inputType="textMultiLine"
+                android:background="@color/flat_clouds"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/button_signup_style"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="Save"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

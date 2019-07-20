@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_update_life"
+        android:title="Update Lifestyler" />
+    <!--<item
+        android:id="@+id/menu_update_agen"
+        android:title="Update Agen" />
+
+    <item
+        android:id="@+id/menu_update_dealer"
+        android:title="Update Dealer" />-->
+</menu>

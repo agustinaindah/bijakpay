@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/layItemReport"
+        style="@style/MatchWrapLayout"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/imgItemMyReport"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/ic_report_member" />
+
+        <TextView
+            android:id="@+id/txtItemDate"
+            style="@style/WrapWrapLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/imgItemMyReport"
+            android:layout_toRightOf="@+id/imgItemMyReport"
+            android:text="09 Agustus 2017"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtItemTransNumb"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtItemDate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgItemMyReport"
+            android:layout_toRightOf="@+id/imgItemMyReport"
+            android:text="Trans number"
+            android:textColor="@color/material_blue_grey_800"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtItemToken"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtItemTransNumb"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgItemMyReport"
+            android:layout_toRightOf="@+id/imgItemMyReport"
+            android:text="123456789"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtNominal"
+            style="@style/WrapWrapLayout"
+            android:layout_alignLeft="@+id/txtTotal"
+            android:layout_alignStart="@+id/txtTotal"
+            android:text="Nominal :"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/imgItemMyReport" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            style="@style/WrapWrapLayout"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtNominal"
+            android:text="Rp 15.000.000"
+            android:textColor="@color/material_red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtTypeMember"
+            style="@style/WrapWrapLayout"
+            android:text="Lifestyler"
+            android:textSize="13sp"
+            android:layout_alignBaseline="@+id/txtItemToken"
+            android:layout_alignBottom="@+id/txtItemToken"
+            android:layout_alignLeft="@+id/txtTotal"
+            android:layout_alignStart="@+id/txtTotal" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layItemReport"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

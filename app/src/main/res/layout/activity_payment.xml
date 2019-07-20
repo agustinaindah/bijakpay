@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/imgLogoBijak"
+        style="@style/WrapWrapLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/logo_bijakpay" />
+
+    <TextView
+        android:id="@+id/txtDescPaymentOnline"
+        style="@style/WrapWrapLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgLogoBijak"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:text="Bijak Pay Online Payment System :"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username :"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/txtDescPaymentOnline"
+        android:layout_alignLeft="@+id/imgLogoBijak"
+        android:layout_alignStart="@+id/imgLogoBijak" />
+
+    <TextView
+        android:id="@+id/txtIsiUsername"
+        style="@style/WrapWrapLayout"
+        android:layout_above="@+id/txtPasswordPay"
+        android:layout_alignEnd="@+id/imgLogoBijak"
+        android:layout_alignRight="@+id/imgLogoBijak"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtPasswordPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtUsername"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Password: Gunakan password bijakpay.com Anda"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+
+   <!-- <TextView
+        android:id="@+id/txtLinkPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPasswordPay"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="Silahkan masuk ke payment.bijakpay.com"/>-->
+
+     <Button
+         android:id="@+id/btnLinkPayment"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:background="#337ab7"
+         android:paddingLeft="5dp"
+         android:textColor="@android:color/white"
+         android:textSize="10sp"
+         android:text="Masuk Bijak payment"
+         android:layout_below="@+id/txtPasswordPay"
+         android:layout_marginTop="14dp"
+         android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

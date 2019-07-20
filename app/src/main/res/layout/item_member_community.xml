@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        style="@style/MatchWrapLayout"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/txtCodeMemberMyMemberComm"
+            style="@style/WrapWrapLayout"
+            android:text="BPXXXXXXXXXX"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtNameMyMemberComm"
+            android:layout_below="@+id/txtCodeMemberMyMemberComm"
+            style="@style/WrapWrapLayout"
+            android:layout_marginTop="5dp"
+            android:text="Agustina Indah Purnamasari"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNumbHpMyMemberComm"
+            android:layout_below="@+id/txtNameMyMemberComm"
+            style="@style/WrapWrapLayout"
+            android:layout_marginTop="5dp"
+            android:text="08123456789"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relLay"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

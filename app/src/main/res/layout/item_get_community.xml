@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        style="@style/MatchWrapLayout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtTitleGetCom"
+            style="@style/WrapWrapLayout"
+            android:layout_marginTop="5dp"
+            android:text="Title Community"
+            android:textColor="#2c3e50"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtTypeMemberGetCom"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtTitleGetCom"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="Tipe Member"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNominalCom"
+            style="@style/WrapWrapLayout"
+            android:text="Rp 12.000.000"
+            android:textColor="@color/material_red_light"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/txtTitleGetCom"
+            android:layout_alignBottom="@+id/txtTitleGetCom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/txtDescCom"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Desc"
+            android:layout_below="@+id/txtTypeMemberGetCom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnJoinComm"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Join"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/txtNominalCom"
+            android:layout_alignLeft="@+id/txtNominalCom"
+            android:layout_alignStart="@+id/txtNominalCom" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relLay"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'BijakpayKey'
+            keyPassword 'P455w0rdBij4kp4y'
+            storeFile file('F:/BijakpayApps')
+            storePassword 'P455w0rdBij4kp4y'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.bijakpay.member"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //android support
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.android.support:support-v4:25.1.0'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //gson
+    compile 'com.google.code.gson:gson:2.7'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //circularimage view
+    compile files('libs/PhotoUtil.jar')
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    //bottom bar
+    compile 'com.roughike:bottom-bar:2.0.2'
+    //chat message view
+    compile 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+    //introscreen
+    compile 'agency.tango.android:material-intro-screen:0.0.5'
+    //sqlbrite
+    compile 'com.squareup.sqlbrite:sqlbrite:0.7.0'
+    //slider
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    testCompile 'junit:junit:4.12'
+}

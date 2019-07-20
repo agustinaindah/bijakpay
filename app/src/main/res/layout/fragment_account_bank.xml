@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatchLayout">
+
+   <!-- <LinearLayout
+        android:id="@+id/layPrimaryBank"
+        style="@style/MatchWrapLayout"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <include
+            style="@style/MatchWrapLayout"
+            layout="@layout/item_account_bank" />
+
+    </LinearLayout>-->
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/msg_isi_data"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvBank"
+        style="@style/MatchMatchLayout" />
+
+    <Button
+        android:id="@+id/btnAddAccountBank"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        style="@style/WrapWrapLayout"
+        android:text="Add New"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddAccountBank"
+        style="@style/WrapWrapLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:src="@drawable/ic_add" />-->
+
+</RelativeLayout>

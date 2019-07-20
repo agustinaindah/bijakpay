@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatchLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMessageDetail"
+        style="@style/MatchMatchLayout" />
+
+    <LinearLayout
+        android:id="@+id/layMessageFormReply"
+        style="@style/MatchWrapLayout"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtContent"
+            style="@style/WrapWrapLayout"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnSend"
+            style="@style/WrapWrapLayout"
+            android:text="Send"
+            android:theme="@style/ButtonColoredPrimary" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/layItemHistoryPoint"
+        style="@style/MatchWrapLayout"
+        android:padding="7dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgMyChannel"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/no_image" />
+
+        <TextView
+            android:id="@+id/txtMyChannelName"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgMyChannel"
+            android:layout_toRightOf="@+id/imgMyChannel"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Nama Member"
+            android:textColor="@color/material_blue_grey_800"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtMyChannelNumbCode"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtMyChannelName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/imgMyChannel"
+            android:layout_toRightOf="@+id/imgMyChannel"
+            android:text="no member"
+            android:textColor="@color/material_blue_grey_800"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtMyChannelTypeMember"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtMyChannelNumbCode"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/imgMyChannel"
+            android:layout_toRightOf="@+id/imgMyChannel"
+            android:text="Tipe member"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layItemHistoryPoint"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrapLayout"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/fiturbg">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        style="@style/MatchWrapLayout"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imgBijak"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:src="@drawable/bj_white"/>
+
+        <LinearLayout
+            android:id="@+id/layLogin"
+            style="@style/layout_login_style"
+            android:layout_below="@+id/imgBijak"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputEmail"
+                style="@style/TextLabel_Login"
+                android:layout_below="@+id/inputName">
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:hint="@string/email" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPassword"
+                style="@style/TextLabel_Login"
+                android:layout_below="@+id/inputEmail"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/layLogin"
+            android:clickable="true"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Forgot password?"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtForgotPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/button_style"
+            android:layout_below="@+id/txtForgotPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/label_login" />
+
+        <Button
+            android:id="@+id/btnToSignup"
+            style="@style/btn_signup_login_style"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:text="@string/label_signup" />
+
+       <!-- <RelativeLayout
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="85dp">
+
+            <TextView
+                android:id="@+id/txtToLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:gravity="center"
+                android:paddingRight="50dp"
+                android:text="Don't have an account?"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtDaftar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@+id/txtToLogin"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/txtToLogin"
+                android:layout_marginEnd="38dp"
+                android:layout_marginRight="38dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/label_signup"
+                android:textColor="@color/material_purple_deep"
+                android:textSize="16sp" />
+
+        </RelativeLayout>-->
+    </RelativeLayout>
+
+</ScrollView>
+

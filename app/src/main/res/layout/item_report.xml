@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        style="@style/MatchWrapLayout"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/txtDateReport"
+            style="@style/WrapWrapLayout"
+            android:layout_marginTop="5dp"
+            android:text="08 Agustus 2017"
+            android:textColor="#2c3e50"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNumberReport"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtDateReport"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="Number"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNominal"
+            style="@style/WrapWrapLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:text="Nominal :"
+            android:textColor="@color/material_red_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNominalReport"
+            style="@style/WrapWrapLayout"
+            android:layout_alignBottom="@+id/txtNumberReport"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Rp 12.000.000"
+            android:textColor="@color/material_red_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtDescReport"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/txtNominalReport"
+            android:layout_marginTop="5dp"
+            android:text="Desc" />
+
+        <!--  <TextView
+              android:id="@+id/txtDateReport"
+              style="@style/WrapWrapLayout"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_below="@+id/txtNominalReport"
+              android:text="27 November 2017"
+              android:textColor="#2c3e50"
+              android:textSize="12sp"
+              android:layout_marginTop="5dp"/>-->
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relLay"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

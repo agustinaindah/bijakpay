@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/MatchMatchLayout"
+    android:padding="20dp">
+
+    <TextView
+        style="@style/MatchWrapLayout"
+        android:text="Member Type"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/edtMemberType"
+        style="@style/MatchWrapLayout"
+        android:enabled="true"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/MatchWrapLayout"
+        android:text="Price"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/edtPrice"
+        style="@style/MatchWrapLayout"
+        android:enabled="true"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/MatchWrapLayout"
+        android:text="Saldo"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/edtSaldo"
+        style="@style/MatchWrapLayout"
+        android:enabled="false"
+        android:singleLine="true"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        style="@style/MatchWrapLayout"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/txtNameUnilevel"
+            style="@style/WrapWrapLayout"
+            android:layout_marginTop="5dp"
+            android:text="Agustina Indah Purnamasari"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNumCodeUnilevel"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtNameUnilevel"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="Kode Member :"
+            android:textColor="#2c3e50"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtLevel"
+            style="@style/WrapWrapLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:text="Level :"
+            android:textColor="#2c3e50"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNumberLevelUnilevel"
+            style="@style/WrapWrapLayout"
+            android:layout_alignBottom="@+id/txtNumCodeUnilevel"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="2"
+            android:layout_marginRight="30dp"
+            android:textColor="#2c3e50"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtCodeMemberUnilevel"
+            style="@style/WrapWrapLayout"
+            android:text="42"
+            android:layout_alignTop="@+id/txtNumCodeUnilevel"
+            android:layout_toRightOf="@+id/txtNumCodeUnilevel"
+            android:layout_toEndOf="@+id/txtNumCodeUnilevel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="#2c3e50"
+            android:textSize="12sp"/>
+
+        <!--  <TextView
+              android:id="@+id/txtDateReport"
+              style="@style/WrapWrapLayout"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_below="@+id/txtNominalReport"
+              android:text="27 November 2017"
+              android:textColor="#2c3e50"
+              android:textSize="12sp"
+              android:layout_marginTop="5dp"/>-->
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relLay"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

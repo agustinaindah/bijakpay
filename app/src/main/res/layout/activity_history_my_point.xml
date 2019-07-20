@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@drawable/navbar_bj"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            style="@style/WrapWrapLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Total Point"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtSaldoEwallet"
+            style="@style/MatchWrapLayout"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:fontFamily="monospace"
+            android:textSize="26sp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/no_data"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMyHistoryPoint"
+            style="@style/MatchMatchLayout"
+            android:padding="3dp" />
+
+        <include layout="@layout/progress_bar" />
+
+        <include layout="@layout/view_error" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

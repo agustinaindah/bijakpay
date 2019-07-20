@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrapLayout"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/layItemReport"
+        style="@style/MatchWrapLayout"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgItemMyReport"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_report_member" />
+
+        <TextView
+            android:id="@+id/txtItemDate"
+            style="@style/WrapWrapLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/imgItemMyReport"
+            android:layout_toRightOf="@+id/imgItemMyReport"
+            android:text="09 Agustus 2017"
+            android:textColor="@color/material_blue_grey_800"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtItemTokenNumb"
+            style="@style/WrapWrapLayout"
+            android:layout_below="@+id/txtItemDate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/imgItemMyReport"
+            android:layout_toRightOf="@+id/imgItemMyReport"
+            android:text="Token number"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtItemMemberType"
+            style="@style/WrapWrapLayout"
+            android:text="Lifestyler"
+            android:textColor="@color/material_blue_grey_800"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/txtItemDate"
+            android:layout_alignBottom="@+id/txtItemDate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:id="@+id/txtItemStatus"
+            style="@style/WrapWrapLayout"
+            android:text="Active"
+            android:textSize="13sp"
+            android:textColor="@color/material_red"
+            android:layout_alignBottom="@+id/txtItemTokenNumb"
+            android:layout_alignRight="@+id/txtItemMemberType"
+            android:layout_alignEnd="@+id/txtItemMemberType" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layItemReport"
+        android:background="@color/flat_clouds" />
+
+</RelativeLayout>

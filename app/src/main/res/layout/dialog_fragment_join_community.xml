@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatchLayout"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        style="@style/MatchWrapLayout"
+        android:text="Community Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtCommName"
+        style="@style/MatchWrapLayout"
+        android:enabled="false"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/MatchWrapLayout"
+        android:text="Community Type"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtCommType"
+        style="@style/MatchWrapLayout"
+        android:enabled="false"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/MatchWrapLayout"
+        android:text="Price"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        style="@style/MatchWrapLayout"
+        android:enabled="false"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/MatchWrapLayout"
+        android:text="Saldo"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtSaldo"
+        style="@style/MatchWrapLayout"
+        android:enabled="false"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnSubmitJoin"
+        style="@style/MatchWrapLayout"
+        android:layout_marginTop="5dp"
+        android:text="Submit"
+        android:theme="@style/ButtonColoredPrimary" />
+</LinearLayout>

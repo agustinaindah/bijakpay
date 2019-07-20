@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardFirstAccount"
+    style="@style/MatchWrapLayout"
+    android:layout_margin="5dp">
+
+    <FrameLayout
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/layBankAccount"
+        style="@style/MatchWrapLayout"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layRekUtama"
+            style="@style/MatchWrapLayout"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtAccountTitle"
+                style="@style/MatchWrapLayout"
+                android:layout_weight="1"
+                android:text="Rekening Utama"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgEditAccount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_margin="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_edit" />
+
+            <!--<ImageView
+                android:id="@+id/imgDeleteAccount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_margin="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_delete" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAccountName"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@id/layRekUtama"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtAccountNumber"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/txtAccountName"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtBankName"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/txtAccountNumber"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtBranchBank"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/txtBankName"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

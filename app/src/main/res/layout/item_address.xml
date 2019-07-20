@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardAddressUtama"
+    style="@style/MatchWrapLayout"
+    android:layout_margin="5dp">
+
+    <FrameLayout
+        android:id="@+id/frAddressUtama"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/layItemAddress"
+        style="@style/MatchWrapLayout"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layAddressUtama"
+            style="@style/MatchWrapLayout">
+
+            <TextView
+                android:id="@+id/txtAddressAs"
+                style="@style/MatchWrapLayout"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Alamat Utama"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgEditAddress"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_margin="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_edit" />
+
+          <!--  <ImageView
+                android:id="@+id/imgEditAddressUtama"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_margin="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_edit" />-->
+
+            <ImageView
+                android:id="@+id/imgDeleteAddress"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_margin="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_delete" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@id/layAddressUtama"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtSubZip"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@id/txtAddress"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtProvince"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@id/txtSubZip"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@id/txtProvince"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="14sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
